@@ -274,7 +274,7 @@
           </div>
 
           <div class="back-footer">
-            Válido por 90 días. Presentar por WhatsApp o en el local en Colón.
+            Válido por 30 días. @pue.tiendamateracolon.
           </div>
         </div>
 
@@ -291,10 +291,10 @@
     function cargarDatosURL() {
       const params = new URLSearchParams(window.location.search);
 
-      const para = params.get('para') || 'Cliente Especial';
-      const de = params.get('de') || 'Pue Tienda Matera';
-      const monto = params.get('monto') || '$ 10.000';
-      const mensaje = params.get('mensaje') || '¡Esperamos que disfrutes mucho de este regalo!';
+      const para = params.get('para') || 'Agus Marcellini';
+      const de = params.get('de') || 'Maru, Tami y Zoe';
+      const monto = params.get('monto') || 'Mate Ranchero Personalizado';
+      const mensaje = params.get('mensaje') || '¡Esperamos que disfrutes mucho de este regalo y compartamos muchos más mates juntas!';
       const codigo = params.get('codigo') || 'GIFT-2026-PUE';
 
       document.getElementById('valPara').innerText = para;
