@@ -81,6 +81,29 @@
       overflow: hidden;
     }
 
+.card-face::before {
+  content: "🧉     🧉     🧉     🧉     🧉";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: block;
+  white-space: pre-wrap;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  padding: 12px;
+  font-family: "Segoe UI Emoji", "Apple Color Emoji", sans-serif;
+  font-size: 23px;
+  line-height: 3;
+  letter-spacing: 4px;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.card-face > * {
+  position: relative;
+  z-index: 1;
+}
+    
     /* Cara Frontal */
     .card-face.front {
       background: linear-gradient(145deg, #e7f0e0 0%, #d8e5d0 100%);
